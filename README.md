@@ -1,6 +1,6 @@
 # Elm
 
-- The booring parts: fakta
+1. The booring parts: fakta
   - Kompilerer til JavaScript på samme måte som Flow og TypeScript
   - Familie: ML
   - "Generate JavaScript with great performance and no runtime exceptions"
@@ -9,7 +9,7 @@
     - Kan ikke uten videre endre state
   - Statisk typet
     - Og heldigvis type inference (phew..)
-- The booring parts: syntax
+2. The booring parts: syntax
   - Literals (konstanter)
   - Lists && records
   - Type alias
@@ -17,5 +17,5 @@
   - Functions
     - En funksjon har _alltid_ ett parameter
   - Modules
-- Vi lager et prosjekt fra scratch
-- The Elm Architecture
+3. Vi lager et prosjekt fra scratch
+4. The Elm Architecture
