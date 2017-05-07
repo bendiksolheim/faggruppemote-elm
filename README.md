@@ -61,6 +61,8 @@ point.x
 ### Type Alias
 
 ```Elm
+type alias Name = String
+
 type alias Point =
     { x : Int
     , y : Int
