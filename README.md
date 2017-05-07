@@ -122,9 +122,12 @@ sum liste = List.foldl (+) 0 liste
 
 pointFreeSum : List number -> number
 pointFreeSum = List.foldl (+) 0
+
+(\x y -> x * y)
 ```
 
 Kuriositet: alle funksjoner har nøyaktig ett parameter
+Kuriositet: partial application by default
 
 ### Moduler
 
