@@ -1,21 +1,133 @@
 # Elm
 
-1. The booring parts: fakta
-  - Kompilerer til JavaScript på samme måte som Flow og TypeScript
-  - Familie: ML
-  - "Generate JavaScript with great performance and no runtime exceptions"
-  - "Purely functional"
+## The booring parts: Generell fakta
+
+- Språk eller rammeverk?
+
+- Transpilerer til JavaScript (på samme måte som Flow og Typescript)
+
+- Familie: ML
+
+- Hva jeg falt for: "Generate JavaScript with great performance and no runtime exceptions"
+
+- "Purely functional"
+  - "Ingen" bieffekter
   - Alt er immutable
-    - Kan ikke uten videre endre state
-  - Statisk typet
-    - Og heldigvis type inference (phew..)
-2. The booring parts: syntax
-  - Literals (konstanter)
-  - Lists && records
-  - Type alias
-  - Union types
-  - Functions
-    - En funksjon har _alltid_ ett parameter
-  - Modules
-3. Vi lager et prosjekt fra scratch
-4. The Elm Architecture
+  - Kan ikke videre endre på state
+  
+- Sterkt, statisk typet
+  - Og heldigvis type inference
+  
+  
+## The booring parts: Syntax
+
+### Literals
+
+```Elm
+True : Bool
+42 : number (Int eller Float)
+4.2 : Float
+'b' : Char
+"Hei" : String
+```
+
+### Lister
+
+```Elm
+[1, 2, 3]
+1 :: [2, 3]
+1 :: 2 :: 3 :: []
+```
+
+### Records
+
+```Elm
+-- {x : Int, y : Int}
+point = {x = 1, y = 2}
+
+point.x
+
+{point | x = 5}
+```
+
+### Type Alias
+
+```Elm
+type alias Point =
+    { x : Int
+    , y : Int
+    }
+    
+point = Point 1 2
+
+Point 1 2 == {x = 1, y = 2} -- True
+```
+
+### Union Types
+
+```Elm
+type CardinalDirection
+    = North
+    | East
+    | South
+    | West
+    
+direction = North
+
+type Age
+    = Unknown
+    | Known Int
+    
+unknownAge = Unknown
+knownAge = Known 29
+```
+
+```Elm
+type Maybe a
+    = Nothing
+    | Just a
+    
+nope = Nothing
+yep = Just "Yep"
+```
+
+### Pattern Matching
+
+```Elm
+maybeValue = Just "value"
+
+case maybeValue of
+    Nothing ->
+        "Nope, no value here!"
+        
+    Just v ->
+        "The value is: " ++ v
+```
+
+### Funksjoner
+
+```Elm
+sum : List number -> number
+sum liste = List.foldl (+) 0 liste
+
+pointFreeSum : List number -> number
+pointFreeSum = List.foldl (+) 0
+```
+
+Kuriositet: alle funksjoner har nøyaktig ett parameter
+
+### Moduler
+
+```Elm
+module MinModul exposing (minfunksjon)
+
+...
+```
+
+##  The not so booring part: Vi lager et prosjekt fra scratch!
+
+Note to self: hopp over til editoren og kod i vei.
+
+## Kanskje en litt booring part: The Elm Architecture
+
+Note to self: vi bruker prosjektet vi har laget til å forstå "The Elm Architecture"
