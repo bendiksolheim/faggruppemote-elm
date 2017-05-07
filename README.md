@@ -31,6 +31,14 @@ True : Bool
 "Hei" : String
 ```
 
+### Tupler
+
+```Elm
+navnOgAlder = ("Bendik", 29)
+(x, y) = (10, 20)
+x -- 10
+```
+
 ### Lister
 
 ```Elm
