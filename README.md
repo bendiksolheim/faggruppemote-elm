@@ -112,6 +112,8 @@ case maybeValue of
         "The value is: " ++ v
 ```
 
+Kuriositet: _"alt"_ kan pattern matches
+
 ### Funksjoner
 
 ```Elm
