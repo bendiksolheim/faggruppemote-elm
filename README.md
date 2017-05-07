@@ -121,6 +121,9 @@ Kuriositet: alle funksjoner har nøyaktig ett parameter
 ```Elm
 module MinModul exposing (minfunksjon)
 
+import List
+import Html exposing (div)
+
 ...
 ```
 
