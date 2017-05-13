@@ -1,6 +1,6 @@
 # Elm
 
-## The booring parts: Generell fakta
+## The boring parts: Generell fakta
 
 - Språk eller rammeverk?
 
@@ -11,7 +11,7 @@
 - Hva jeg falt for: "Generate JavaScript with great performance and no runtime exceptions"
 
 - "Purely functional"
-  - "Ingen" bieffekter
+  - "Ingen" bivirkninger
   - Alt er immutable
   - Kan ikke videre endre på state
   
@@ -19,7 +19,7 @@
   - Og heldigvis type inference
   
   
-## The booring parts: Syntax
+## The boring parts: Syntax
 
 ### Literals
 
@@ -142,10 +142,10 @@ import Html exposing (div)
 ...
 ```
 
-##  The not so booring part: Vi lager et prosjekt fra scratch!
+##  The not so boring part: Vi lager et prosjekt fra scratch!
 
 Note to self: hopp over til editoren og kod i vei.
 
-## Kanskje en litt booring part: The Elm Architecture
+## Kanskje en litt boring part: The Elm Architecture
 
 Note to self: vi bruker prosjektet vi har laget til å forstå "The Elm Architecture"
